@@ -1,0 +1,28 @@
+body,html{
+    margin:0;
+}
+.navbar-wrapper{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #3B3B3B;
+    color:#D32F2F;
+
+
+}
+.ul{
+    /* removes the bullets */
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+li a{
+    /* makes it so that the list elements are not displayed as blocks but align on one line*/
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-family: "Roboto Mono", serif;
+}
+li a:hover{
+    color: white;
+}
