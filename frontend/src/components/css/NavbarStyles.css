@@ -10,6 +10,19 @@ body,html{
 
 
 }
+.navbar-wrapper ul {
+    display:none;
+}
+.navbar-wrapper.active ul{
+   display:block;
+}
+
+.close-btn{
+    top: 5px;
+    right:10px;
+    position:absolute;
+
+}
 .ul{
     /* removes the bullets */
     list-style-type:none;

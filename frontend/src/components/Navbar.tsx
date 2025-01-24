@@ -1,13 +1,24 @@
 import "./css/NavbarStyles.css"
+import { useState } from "react";
 function Navbar(){
-    return(
-        <div className="navbar-wrapper">
-            <ul className="ul">
-                <li><a>Shoppingcart</a></li>
-                <li><a>Store</a></li>
+    const [isNavActive , setIsNavActive] = useState(true)
 
-                <li ><a>Sign in</a></li>
-                <li ><a>Sign up</a></li>
+    const handleNavbar=()=>{
+        setIsNavActive((prevState)=>!prevState)
+    
+
+      
+    }
+    return(
+        <div className={`navbar-wrapper ${isNavActive ? "": "active"}`}>
+            <div className="close-btn-wrapper">
+            <button onClick={handleNavbar} className="close-btn">{isNavActive ? <i className="fa fa-bars"></i>: "x"}</button>
+            </div>
+            <ul className="ul">
+                <li><a>clothing</a></li>
+                <li><a>books</a></li>
+                <li><a>merchandise</a></li>
+                <li><a>toys</a></li>
             </ul>
         </div>
     )
