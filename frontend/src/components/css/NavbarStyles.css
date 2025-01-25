@@ -1,12 +1,33 @@
 body,html{
     margin:0;
 }
+.container{
+    display: flex;
+}
+.container li{
+    display:inline;
+}
+.nav-btn-shoppingCart{
+    display: flex;
+    position: absolute;
+    top:5px;
+    right:10px;
+}
+.nav-btn-likedItems{
+    display:flex;
+    position:absolute;
+    top:5px;
+    right:6vh;
+}
 .navbar-wrapper{
     display:flex;
     justify-content: center;
     align-items:center;
     background-color: #3B3B3B;
     color:#D32F2F;
+    position:fixed;
+    width: 100%;
+  
 
 
 }
@@ -14,13 +35,21 @@ body,html{
     display:none;
 }
 .navbar-wrapper.active ul{
-   display:block;
+   display:flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+}
+.wrapper.active ul{
+    display:none;
 }
 
 .close-btn{
     top: 5px;
-    right:10px;
+    left:10px;
     position:absolute;
+    
 
 }
 .ul{
@@ -35,7 +64,26 @@ li a{
     padding: 5px 10px;
     text-decoration: none;
     font-family: "Roboto Mono", serif;
+    font-size: 11px;
 }
 li a:hover{
     color: white;
+}
+img{
+    width: 13px;
+    height: 13px;
+}
+.logo{
+    position:absolute;
+    top: 10px;
+    font-family: "Roboto Mono", serif;
+    font-size: 11px;
+
+}
+.wrapper{
+    width:100%;
+    height: auto;
+    padding: 9.5px 15px;
+    background-color:#3B3B3B;
+    color:#D32F2F;
 }
